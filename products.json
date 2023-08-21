@@ -1,0 +1,34 @@
+[
+    {
+      "name": "HVAC System 1",
+      "category": "HVAC",
+      "description": "This is a high-efficiency HVAC system with advanced features.",
+      "image": "product1.jpg"
+    },
+    {
+      "name": "Ventilation Fan",
+      "category": "Mechanical Ventilation",
+      "description": "Powerful ventilation fan for commercial spaces.",
+      "image": "product2.jpg"
+    },
+    {
+      "name": "Cold Room Unit",
+      "category": "Cold Rooms",
+      "description": "Cold room unit for storing perishable goods.",
+      "image": "product3.jpg"
+    },
+    {
+      "name": "Accessory Kit",
+      "category": "Accessories",
+      "description": "Essential accessory kit for HVAC systems.",
+      "image": "product4.jpg"
+    },
+    {
+      "name": "Spare Parts Bundle",
+      "category": "Spare Parts",
+      "description": "Bundle of spare parts for HVAC maintenance.",
+      "image": "product5.jpg"
+    }
+    
+  ]
+  
