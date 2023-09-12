@@ -9703,6 +9703,27 @@ blockquote {
   border-radius: 0 30px 30px 0;
   font-size: 18px; }
 
+
+/* CSS for the image cards and grid layout */
+.image-card {
+  border: 1px solid #ddd;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust the column width as needed */
+  gap: 20px; /* Adjust the gap between cards as needed */
+}
+
+
+
+
+
 /*
  * Shortcode: opening-hours.scss
  * -----------------------------------------------
@@ -15316,6 +15337,91 @@ body.has-fixed-footer.tm-boxed-layout .fixed-footer {
   margin: 0 auto;
   max-width: 1170px; }
 
+.search-bar-section {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.search-bar {
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* Adjust the width as needed */
+  width: 70%; /* Adjust the width as needed */
+}
+
+.search-bar input {
+  width: 80%;
+  border: none;
+  outline: none;
+  padding: 5px;
+  height: 30px;
+}
+
+.search-icon {
+  color: #007bff; /* Blue color, you can change it to your desired color */
+  font-size: 20px;
+  cursor: pointer;
+}  
+  
+
+.search-bar button {
+  background-color: #25d366;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 5px;
+  border-radius: 10px;
+}
+  
+.client-grid {
+  max-width: 1200px; /* Set a maximum width for the container */
+  margin: 0 auto; /* Center the container horizontally */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px; /* Reduce the gap between items */
+  padding: 20px;
+  background-color: #FFFFFF; /* Background color for the grid */
+  border-radius: 10px; /* Rounded corners for the grid */
+}
+
+.client-item {
+  background-color: #ffffff; /* Background color for each item */
+  padding: 20px;
+  border-radius: 10px; /* Rounded corners for each item */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Box shadow for each item */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+}
+
+.client-item img {
+  max-width: 100%;
+  border-radius: 10px; /* Slightly curved edges for the images */
+  margin-bottom: 10px; /* Add space between the image and text */
+}
+
+.client-item h4 {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.client-item p {
+  font-size: 14px;
+  color: #555;
+}
+
+ 
+
+
+
 /* Footer Inverted*/
 footer#footer.footer-inverted {
   background-color: #f9f9f9;
@@ -15394,6 +15500,19 @@ footer#footer.footer-black .widget.widget_tag_cloud .tagcloud > a {
 
 footer#footer.footer-inverted .widget.widget_archive ul > li, footer#footer.footer-inverted .widget.widget_categories ul > li, footer#footer.footer-inverted .widget.widget_links ul > li, footer#footer.footer-inverted .widget.widget_meta ul > li, footer#footer.footer-inverted .widget.widget_nav_menu ul > li, footer#footer.footer-inverted .widget.widget_pages ul > li, footer#footer.footer-inverted .widget.widget_recent_comments ul > li, footer#footer.footer-inverted .widget.widget_recent_entries ul > li {
   border-top-color: rgba(55, 55, 55, 0.1); }
+
+.floating {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 75px;
+  text-align: center;
+  font-size: 40px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
 
 /*
  * Shortcode: clients.scss
@@ -15531,7 +15650,7 @@ footer#footer.footer-inverted .widget.widget_archive ul > li, footer#footer.foot
     .service-item .service-link:hover {
       color: #fff !important; }
   .service-item:hover {
-    background: #0E233E; }
+    background: #4C9A2A; }
 
 /*
  * Shortcode: staff.scss
@@ -17209,6 +17328,8 @@ footer#footer a:not(.social-link):not(.icon) {
   color: #eee !important; }
 
 /* Text White Color*/
+.text-black{
+  color: #000000 !important; }
 .text-white-f1 {
   color: #f1f1f1 !important; }
 
