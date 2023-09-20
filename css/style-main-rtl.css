@@ -8509,7 +8509,7 @@ blockquote {
         .final-countdown-modern-circular .countdown-container .clock-item .inner .text .type-time {
           font-size: 13px;
           margin-bottom: 0; }
-    @media (min-width: 768px) and (max-width: 991px) {
+    @media (min-width: 768px) and (max-width: 9) {
       .final-countdown-modern-circular .countdown-container .clock-item {
         margin-bottom: 30px; } }
     @media (max-width: 767px) {
