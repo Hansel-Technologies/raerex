@@ -2078,7 +2078,7 @@ header#header .nav-side-icon-list {
 .menuzord.green .menuzord-menu > li.active > a,
 .menuzord.green .menuzord-menu > li:hover > a,
 .menuzord.green .menuzord-menu ul.dropdown li:hover > a {
-  color: #37BC9B; }
+  color: #4C9A2A; }
 
 /* red */
 .menuzord.red .menuzord-menu > li.active > a,
@@ -8519,7 +8519,7 @@ blockquote {
         .final-countdown-modern-circular .countdown-container .clock-item .inner .text .type-time {
           font-size: 13px;
           margin-bottom: 0; }
-    @media (min-width: 768px) and (max-width: 991px) {
+    @media (min-width: 768px) and (max-width: 9) {
       .final-countdown-modern-circular .countdown-container .clock-item {
         margin-bottom: 30px; } }
     @media (max-width: 767px) {
@@ -16697,8 +16697,8 @@ footer#footer.footer-inverted .widget.widget_archive ul > li, footer#footer.foot
  * -----------------------------------------------
 */
 footer#footer {
-  background-color: #112A48;
-  color: #000000;
+  background-color: #4C9A2A;
+  color: #2e5e1a;
   font-size: 15px; }
 
 .footer-bottom {
