@@ -1,4 +1,4 @@
-var THEMEMASCOT = {};
+var Hansel Technologies Limited = {};
 
 (function($) {
   "use strict";
@@ -31,7 +31,7 @@ var THEMEMASCOT = {};
   var $gallery_isotope_sorter_parent = $( gallery_isotope_sorter_string );
   var gallery_isotope_sorter = ".isotope-layout-sorter a";
 
-  THEMEMASCOT.isMobile = {
+  Hansel Technologies Limited.isMobile = {
     Android: function() {
       return navigator.userAgent.match(/Android/i);
     },
@@ -48,7 +48,7 @@ var THEMEMASCOT = {};
       return navigator.userAgent.match(/IEMobile/i);
     },
     any: function() {
-      return (THEMEMASCOT.isMobile.Android() || THEMEMASCOT.isMobile.BlackBerry() || THEMEMASCOT.isMobile.iOS() || THEMEMASCOT.isMobile.Opera() || THEMEMASCOT.isMobile.Windows());
+      return (Hansel Technologies Limited.isMobile.Android() || Hansel Technologies Limited.isMobile.BlackBerry() || Hansel Technologies Limited.isMobile.iOS() || Hansel Technologies Limited.isMobile.Opera() || Hansel Technologies Limited.isMobile.Windows());
     }
   };
 
@@ -97,7 +97,7 @@ var THEMEMASCOT = {};
     }
   }
 
-  THEMEMASCOT.isRTL = {
+  Hansel Technologies Limited.isRTL = {
     check: function() {
       if( $( "html" ).attr("dir") === "rtl" ) {
         return true;
@@ -107,7 +107,7 @@ var THEMEMASCOT = {};
     }
   };
 
-  THEMEMASCOT.isLTR = {
+  Hansel Technologies Limited.isLTR = {
     check: function() {
       if( $( "html" ).attr("dir") !== "rtl" ) {
         return true;
@@ -117,7 +117,7 @@ var THEMEMASCOT = {};
     }
   };
 
-  THEMEMASCOT.urlParameter = {
+  Hansel Technologies Limited.urlParameter = {
     get: function(sParam) {
       var sPageURL = decodeURIComponent(window.location.search.substring(1)),
         sURLVariables = sPageURL.split('&'),
@@ -134,37 +134,37 @@ var THEMEMASCOT = {};
     }
   };
 
-  THEMEMASCOT.initialize = {
+  Hansel Technologies Limited.initialize = {
 
     init: function() {
-      THEMEMASCOT.initialize.TM_demoSwitcher();
-      THEMEMASCOT.initialize.TM_datePicker();
-      THEMEMASCOT.initialize.TM_niceSelect();
-      THEMEMASCOT.initialize.TM_parallaxScrollInit();
-      THEMEMASCOT.initialize.TM_bootstrapNavTab();
-      THEMEMASCOT.initialize.TM_tiltParallaxAnimation();
-      THEMEMASCOT.initialize.TM_appearVariousItems();
-      THEMEMASCOT.initialize.TM_paroller();
-      THEMEMASCOT.initialize.TM_textillate();
-      THEMEMASCOT.initialize.TM_parallaxBgInit();
+      Hansel Technologies Limited.initialize.TM_demoSwitcher();
+      Hansel Technologies Limited.initialize.TM_datePicker();
+      Hansel Technologies Limited.initialize.TM_niceSelect();
+      Hansel Technologies Limited.initialize.TM_parallaxScrollInit();
+      Hansel Technologies Limited.initialize.TM_bootstrapNavTab();
+      Hansel Technologies Limited.initialize.TM_tiltParallaxAnimation();
+      Hansel Technologies Limited.initialize.TM_appearVariousItems();
+      Hansel Technologies Limited.initialize.TM_paroller();
+      Hansel Technologies Limited.initialize.TM_textillate();
+      Hansel Technologies Limited.initialize.TM_parallaxBgInit();
 
-      THEMEMASCOT.initialize.TM_navbar_scrolltofixed_hide();
-      THEMEMASCOT.initialize.TM_dataTables();
-      THEMEMASCOT.initialize.TM_toggleNavSearchIcon();
-      THEMEMASCOT.initialize.TM_fixedFooter();
-      THEMEMASCOT.initialize.TM_ddslick();
-      THEMEMASCOT.initialize.TM_sliderRange();
-      THEMEMASCOT.initialize.TM_platformDetect();
-      THEMEMASCOT.initialize.TM_customDataAttributes();
-      THEMEMASCOT.initialize.TM_resizeFullscreen();
-      THEMEMASCOT.initialize.TM_lightgallery_lightbox();
-      THEMEMASCOT.initialize.TM_lightgallery_lightbox_reset();
-      THEMEMASCOT.initialize.TM_prettyPhoto_lightbox();
-      THEMEMASCOT.initialize.TM_nivolightbox();
-      THEMEMASCOT.initialize.TM_YTPlayer();
-      THEMEMASCOT.initialize.TM_CustomColumnsHolderResponsiveStyler();
-      THEMEMASCOT.initialize.TM_equalHeightDivs();
-      THEMEMASCOT.initialize.TM_wow();
+      Hansel Technologies Limited.initialize.TM_navbar_scrolltofixed_hide();
+      Hansel Technologies Limited.initialize.TM_dataTables();
+      Hansel Technologies Limited.initialize.TM_toggleNavSearchIcon();
+      Hansel Technologies Limited.initialize.TM_fixedFooter();
+      Hansel Technologies Limited.initialize.TM_ddslick();
+      Hansel Technologies Limited.initialize.TM_sliderRange();
+      Hansel Technologies Limited.initialize.TM_platformDetect();
+      Hansel Technologies Limited.initialize.TM_customDataAttributes();
+      Hansel Technologies Limited.initialize.TM_resizeFullscreen();
+      Hansel Technologies Limited.initialize.TM_lightgallery_lightbox();
+      Hansel Technologies Limited.initialize.TM_lightgallery_lightbox_reset();
+      Hansel Technologies Limited.initialize.TM_prettyPhoto_lightbox();
+      Hansel Technologies Limited.initialize.TM_nivolightbox();
+      Hansel Technologies Limited.initialize.TM_YTPlayer();
+      Hansel Technologies Limited.initialize.TM_CustomColumnsHolderResponsiveStyler();
+      Hansel Technologies Limited.initialize.TM_equalHeightDivs();
+      Hansel Technologies Limited.initialize.TM_wow();
     },
 
 
@@ -322,7 +322,7 @@ var THEMEMASCOT = {};
     /* -------------------------- Background Parallax ----------------------- */
     /* ---------------------------------------------------------------------- */
     TM_parallaxBgInit: function() {
-      if (!THEMEMASCOT.isMobile.any() && $window.width() >= 800 ) {
+      if (!Hansel Technologies Limited.isMobile.any() && $window.width() >= 800 ) {
         $('.parallax').each(function() {
           var data_parallax_ratio = ( $(this).data("parallax-ratio") === undefined ) ? '0.5': $(this).data("parallax-ratio");
           $(this).parallax("50%", data_parallax_ratio);
@@ -508,7 +508,7 @@ var THEMEMASCOT = {};
     /* ------------------------------- Platform detect  --------------------- */
     /* ---------------------------------------------------------------------- */
     TM_platformDetect: function() {
-      if (THEMEMASCOT.isMobile.any()) {
+      if (Hansel Technologies Limited.isMobile.any()) {
         $html.addClass("mobile");
       } else {
         $html.addClass("no-mobile");
@@ -796,8 +796,8 @@ var THEMEMASCOT = {};
           overflowY: 'scroll', // as we know that popup content is tall we set scroll overflow by default to avoid jump
           callbacks: {
           parseAjax: function(mfpResponse) {
-            THEMEMASCOT.initialize.TM_sliderRange();
-            THEMEMASCOT.initialize.TM_ddslick();
+            Hansel Technologies Limited.initialize.TM_sliderRange();
+            Hansel Technologies Limited.initialize.TM_ddslick();
           }
           }
         });
@@ -1006,7 +1006,7 @@ var THEMEMASCOT = {};
       if( $loadmore_btn_lightgallery_lightbox.length > 0 ) {
         $loadmore_btn_lightgallery_lightbox.on('click', function(e) {
           $(".lightgallery-lightbox").data("lightGallery").destroy(true);
-          THEMEMASCOT.initialize.TM_lightgallery_lightbox();
+          Hansel Technologies Limited.initialize.TM_lightgallery_lightbox();
         });
       }
     },
@@ -1277,24 +1277,24 @@ var THEMEMASCOT = {};
   };
 
 
-  THEMEMASCOT.header = {
+  Hansel Technologies Limited.header = {
 
     init: function() {
 
       var t = setTimeout(function() {
-        THEMEMASCOT.header.TM_verticalNavHeaderPadding();
-        THEMEMASCOT.header.TM_Memuzord_Megamenu();
-        THEMEMASCOT.header.TM_TopNav_Dropdown_Position();
-        THEMEMASCOT.header.TM_fullscreenMenu();
-        THEMEMASCOT.header.TM_sidePanelReveal();
-        THEMEMASCOT.header.TM_scroolToTopOnClick();
-        THEMEMASCOT.header.TM_scrollToFixed();
-        THEMEMASCOT.header.TM_topnavAnimate();
-        THEMEMASCOT.header.TM_scrolltoTarget();
-        THEMEMASCOT.header.TM_navLocalScorll();
-        THEMEMASCOT.header.TM_menuCollapseOnClick();
-        THEMEMASCOT.header.TM_homeParallaxFadeEffect();
-        THEMEMASCOT.header.TM_topsearch_toggle();
+        Hansel Technologies Limited.header.TM_verticalNavHeaderPadding();
+        Hansel Technologies Limited.header.TM_Memuzord_Megamenu();
+        Hansel Technologies Limited.header.TM_TopNav_Dropdown_Position();
+        Hansel Technologies Limited.header.TM_fullscreenMenu();
+        Hansel Technologies Limited.header.TM_sidePanelReveal();
+        Hansel Technologies Limited.header.TM_scroolToTopOnClick();
+        Hansel Technologies Limited.header.TM_scrollToFixed();
+        Hansel Technologies Limited.header.TM_topnavAnimate();
+        Hansel Technologies Limited.header.TM_scrolltoTarget();
+        Hansel Technologies Limited.header.TM_navLocalScorll();
+        Hansel Technologies Limited.header.TM_menuCollapseOnClick();
+        Hansel Technologies Limited.header.TM_homeParallaxFadeEffect();
+        Hansel Technologies Limited.header.TM_topsearch_toggle();
       }, 0);
 
     },
@@ -1370,7 +1370,7 @@ var THEMEMASCOT = {};
       }
       $('.side-panel-trigger').on('click', function(e) {
         $body.toggleClass("side-panel-open");
-        if ( THEMEMASCOT.isMobile.any() ) {
+        if ( Hansel Technologies Limited.isMobile.any() ) {
           $body.toggleClass("overflow-hidden");
         }
         return false;
@@ -1800,21 +1800,21 @@ var THEMEMASCOT = {};
 
   };
 
-  THEMEMASCOT.widget = {
+  Hansel Technologies Limited.widget = {
 
     init: function() {
 
       var t = setTimeout(function() {
-        THEMEMASCOT.widget.TM_shopClickEvents();
-        THEMEMASCOT.widget.TM_masonryIsotope();
-        THEMEMASCOT.widget.TM_pieChart();
-        THEMEMASCOT.widget.TM_progressBar();
-        THEMEMASCOT.widget.TM_funfact();
-        THEMEMASCOT.widget.TM_instagramFeed();
-        THEMEMASCOT.widget.TM_jflickrfeed();
-        THEMEMASCOT.widget.TM_accordion_toggles();
-        THEMEMASCOT.widget.TM_tooltip();
-        THEMEMASCOT.widget.TM_countDownTimer();
+        Hansel Technologies Limited.widget.TM_shopClickEvents();
+        Hansel Technologies Limited.widget.TM_masonryIsotope();
+        Hansel Technologies Limited.widget.TM_pieChart();
+        Hansel Technologies Limited.widget.TM_progressBar();
+        Hansel Technologies Limited.widget.TM_funfact();
+        Hansel Technologies Limited.widget.TM_instagramFeed();
+        Hansel Technologies Limited.widget.TM_jflickrfeed();
+        Hansel Technologies Limited.widget.TM_accordion_toggles();
+        Hansel Technologies Limited.widget.TM_tooltip();
+        Hansel Technologies Limited.widget.TM_countDownTimer();
       }, 0);
 
     },
@@ -1857,7 +1857,7 @@ var THEMEMASCOT = {};
               tmMasonryItemsHeightResizer(size, $each_istope);
 
               isotope_inner.isotope({
-                isOriginLeft: THEMEMASCOT.isLTR.check(),
+                isOriginLeft: Hansel Technologies Limited.isLTR.check(),
                 itemSelector: '.isotope-item',
                 layoutMode: "masonry",
                 masonry: {
@@ -1874,7 +1874,7 @@ var THEMEMASCOT = {};
             } else{
               var isotope_inner = $each_istope.children('.isotope-layout-inner');
               isotope_inner.isotope({
-                isOriginLeft: THEMEMASCOT.isLTR.check(),
+                isOriginLeft: Hansel Technologies Limited.isLTR.check(),
                 itemSelector: '.isotope-item',
                 layoutMode: "fitRows",
                 getSortData : {
@@ -1910,7 +1910,7 @@ var THEMEMASCOT = {};
           size = $this.find('.isotope-item-sizer').width();
           tmMasonryItemsHeightResizer(size, $this);
           isotope_inner.isotope({
-            isOriginLeft: THEMEMASCOT.isLTR.check(),
+            isOriginLeft: Hansel Technologies Limited.isLTR.check(),
             itemSelector: '.isotope-item',
             layoutMode: "masonry",
             masonry: {
@@ -1922,7 +1922,7 @@ var THEMEMASCOT = {};
           var $this = $('#'+linkwith);
           var isotope_inner = $this.children('.isotope-layout-inner');
           isotope_inner.isotope({
-            isOriginLeft: THEMEMASCOT.isLTR.check(),
+            isOriginLeft: Hansel Technologies Limited.isLTR.check(),
             itemSelector: '.isotope-item',
             layoutMode: "fitRows",
             filter: fselector
@@ -1943,7 +1943,7 @@ var THEMEMASCOT = {};
           $('#'+linkwith).isotope('shuffle');
         } else {
           $('#'+linkwith).isotope({
-            isOriginLeft: THEMEMASCOT.isLTR.check(),
+            isOriginLeft: Hansel Technologies Limited.isLTR.check(),
             sortBy: sortby
           });
         }
@@ -1956,13 +1956,13 @@ var THEMEMASCOT = {};
     TM_isotopeGridRearrange: function() {
       if ($gallery_isotope.hasClass("masonry")){
         $gallery_isotope.isotope({
-          isOriginLeft: THEMEMASCOT.isLTR.check(),
+          isOriginLeft: Hansel Technologies Limited.isLTR.check(),
           itemSelector: '.isotope-item',
           layoutMode: "masonry"
         });
       } else{
         $gallery_isotope.isotope({
-          isOriginLeft: THEMEMASCOT.isLTR.check(),
+          isOriginLeft: Hansel Technologies Limited.isLTR.check(),
           itemSelector: '.isotope-item',
           layoutMode: "fitRows"
         });
@@ -2311,7 +2311,7 @@ var THEMEMASCOT = {};
             bar.css('width', '0%').animate({'width': percentage + '%'}, 2000);
 
             if (current_item.hasClass('progress-bar-floating-percent')) {
-              if(THEMEMASCOT.isRTL.check()) {
+              if(Hansel Technologies Limited.isRTL.check()) {
                 percent.css('right', '0%').animate({'right': percentage + '%'}, 2000);
               } else {
                 percent.css('left', '0%').animate({'left': percentage + '%'}, 2000);
@@ -2427,7 +2427,7 @@ var THEMEMASCOT = {};
         }, function() {
           $twitter_feed_carousel.find('ul').addClass("owl-carousel owl-theme");
           $twitter_feed_carousel.find('ul').owlCarousel({
-            rtl: THEMEMASCOT.isRTL.check(),
+            rtl: Hansel Technologies Limited.isRTL.check(),
             autoplay: true,
             autoplayTimeout: 2000,
             loop: true,
@@ -2440,19 +2440,19 @@ var THEMEMASCOT = {};
     }
   };
 
-  THEMEMASCOT.slider = {
+  Hansel Technologies Limited.slider = {
 
     init: function() {
 
       var t = setTimeout(function() {
-        THEMEMASCOT.slider.TM_MultiScrollSlider();
-        THEMEMASCOT.slider.TM_FullPageSlider();
-        THEMEMASCOT.slider.TM_PagePilingSlider();
-        THEMEMASCOT.slider.TM_typedAnimation();
-        THEMEMASCOT.slider.TM_slick();
-        THEMEMASCOT.slider.TM_maximageSlider();
-        THEMEMASCOT.slider.TM_bxslider();
-        THEMEMASCOT.slider.TM_beforeAfterSlider();
+        Hansel Technologies Limited.slider.TM_MultiScrollSlider();
+        Hansel Technologies Limited.slider.TM_FullPageSlider();
+        Hansel Technologies Limited.slider.TM_PagePilingSlider();
+        Hansel Technologies Limited.slider.TM_typedAnimation();
+        Hansel Technologies Limited.slider.TM_slick();
+        Hansel Technologies Limited.slider.TM_maximageSlider();
+        Hansel Technologies Limited.slider.TM_bxslider();
+        Hansel Technologies Limited.slider.TM_beforeAfterSlider();
       }, 0);
 
     },
@@ -2720,7 +2720,7 @@ var THEMEMASCOT = {};
           var items_tablet = ( $this.data("tablet") === undefined ) ? 2: $this.data("tablet");
 
           $this.slick({
-            rtl: THEMEMASCOT.isRTL.check(),
+            rtl: Hansel Technologies Limited.isRTL.check(),
             infinite: data_loop,
             autoplay: data_autoplay,
             autoplaySpeed: data_duration,
@@ -2766,7 +2766,7 @@ var THEMEMASCOT = {};
           var $this = $(this);
           var id =  $this.attr('id');
           $this.slick({
-            rtl: THEMEMASCOT.isRTL.check(),
+            rtl: Hansel Technologies Limited.isRTL.check(),
             slidesToShow: 1,
             slidesToScroll: 1,
             arrows: false,
@@ -2775,7 +2775,7 @@ var THEMEMASCOT = {};
           });
 
           $('.slider-nav-'+id).slick({
-            rtl: THEMEMASCOT.isRTL.check(),
+            rtl: Hansel Technologies Limited.isRTL.check(),
             slidesToShow: 7,
             slidesToScroll: 1,
             asNavFor: $this,
@@ -2822,7 +2822,7 @@ var THEMEMASCOT = {};
 
 
 
-            rtl: THEMEMASCOT.isRTL.check(),
+            rtl: Hansel Technologies Limited.isRTL.check(),
             autoplay: data_autoplay,
             autoplayTimeout: data_duration,
             autoHeight: true,
@@ -2853,7 +2853,7 @@ var THEMEMASCOT = {};
           var data_margin = ( $this.data("margin") === undefined ) ? 30: $this.data("margin");
 
           $this.owlCarousel({
-            rtl: THEMEMASCOT.isRTL.check(),
+            rtl: Hansel Technologies Limited.isRTL.check(),
             animateOut: 'slideOutDown',
             animateIn: 'flipInX',
 
@@ -2887,7 +2887,7 @@ var THEMEMASCOT = {};
           var data_margin = ( $this.data("margin") === undefined ) ? 30: $this.data("margin");
 
           $this.owlCarousel({
-            rtl: THEMEMASCOT.isRTL.check(),
+            rtl: Hansel Technologies Limited.isRTL.check(),
             autoplay: data_autoplay,
             autoplayTimeout: data_duration,
             autoHeight: true,
@@ -2924,7 +2924,7 @@ var THEMEMASCOT = {};
           var items_tablet = ( $this.data("tablet") === undefined ) ? 2: $this.data("tablet");
 
           $this.owlCarousel({
-            rtl: THEMEMASCOT.isRTL.check(),
+            rtl: Hansel Technologies Limited.isRTL.check(),
             autoplay: data_autoplay,
             autoplayTimeout: data_duration,
             smartSpeed: data_smartspeed,
@@ -2981,7 +2981,7 @@ var THEMEMASCOT = {};
           var items_tablet = ( $this.data("tablet") === undefined ) ? 2: $this.data("tablet");
 
           $this.owlCarousel({
-            rtl: THEMEMASCOT.isRTL.check(),
+            rtl: Hansel Technologies Limited.isRTL.check(),
             autoplay: data_autoplay,
             autoplayTimeout: data_duration,
             smartSpeed: data_smartspeed,
@@ -3039,7 +3039,7 @@ var THEMEMASCOT = {};
           var items_tablet = ( $this.data("tablet") === undefined ) ? 2: $this.data("tablet");
 
           $this.owlCarousel({
-            rtl: THEMEMASCOT.isRTL.check(),
+            rtl: Hansel Technologies Limited.isRTL.check(),
             autoplay: data_autoplay,
             autoplayTimeout: data_duration,
             smartSpeed: data_smartspeed,
@@ -3096,7 +3096,7 @@ var THEMEMASCOT = {};
           var items_tablet = ( $this.data("tablet") === undefined ) ? 2: $this.data("tablet");
 
           $this.owlCarousel({
-            rtl: THEMEMASCOT.isRTL.check(),
+            rtl: Hansel Technologies Limited.isRTL.check(),
             autoplay: data_autoplay,
             autoplayTimeout: data_duration,
             smartSpeed: data_smartspeed,
@@ -3153,7 +3153,7 @@ var THEMEMASCOT = {};
           var items_tablet = ( $this.data("tablet") === undefined ) ? 2: $this.data("tablet");
 
           $this.owlCarousel({
-            rtl: THEMEMASCOT.isRTL.check(),
+            rtl: Hansel Technologies Limited.isRTL.check(),
             autoplay: data_autoplay,
             autoplayTimeout: data_duration,
             smartSpeed: data_smartspeed,
@@ -3210,7 +3210,7 @@ var THEMEMASCOT = {};
           var items_tablet = ( $this.data("tablet") === undefined ) ? 3: $this.data("tablet");
 
           $this.owlCarousel({
-            rtl: THEMEMASCOT.isRTL.check(),
+            rtl: Hansel Technologies Limited.isRTL.check(),
             autoplay: data_autoplay,
             autoplayTimeout: data_duration,
             smartSpeed: data_smartspeed,
@@ -3267,7 +3267,7 @@ var THEMEMASCOT = {};
           var items_tablet = ( $this.data("tablet") === undefined ) ? 4: $this.data("tablet");
 
           $this.owlCarousel({
-            rtl: THEMEMASCOT.isRTL.check(),
+            rtl: Hansel Technologies Limited.isRTL.check(),
             autoplay: data_autoplay,
             autoplayTimeout: data_duration,
             smartSpeed: data_smartspeed,
@@ -3409,30 +3409,30 @@ var THEMEMASCOT = {};
   /* ---------- document ready, window load, scroll and resize ------------ */
   /* ---------------------------------------------------------------------- */
   //document ready
-  THEMEMASCOT.documentOnReady = {
+  Hansel Technologies Limited.documentOnReady = {
     init: function() {
-      THEMEMASCOT.initialize.init();
-      THEMEMASCOT.header.init();
-      THEMEMASCOT.slider.init();
-      THEMEMASCOT.widget.init();
-      THEMEMASCOT.windowOnscroll.init();
+      Hansel Technologies Limited.initialize.init();
+      Hansel Technologies Limited.header.init();
+      Hansel Technologies Limited.slider.init();
+      Hansel Technologies Limited.widget.init();
+      Hansel Technologies Limited.windowOnscroll.init();
     }
   };
 
   //window on load
-  THEMEMASCOT.windowOnLoad = {
+  Hansel Technologies Limited.windowOnLoad = {
     init: function() {
       var t = setTimeout(function() {
-        THEMEMASCOT.initialize.TM_magnificPopup_lightbox();
-        THEMEMASCOT.initialize.TM_preLoaderOnLoad();
-        THEMEMASCOT.initialize.TM_parallaxBgInit();
-        THEMEMASCOT.widget.TM_tweetie();
-        THEMEMASCOT.initialize.TM_stickInParent();
-        THEMEMASCOT.initialize.TM_fitVids();
-        THEMEMASCOT.slider.TM_owlCarousel();
+        Hansel Technologies Limited.initialize.TM_magnificPopup_lightbox();
+        Hansel Technologies Limited.initialize.TM_preLoaderOnLoad();
+        Hansel Technologies Limited.initialize.TM_parallaxBgInit();
+        Hansel Technologies Limited.widget.TM_tweetie();
+        Hansel Technologies Limited.initialize.TM_stickInParent();
+        Hansel Technologies Limited.initialize.TM_fitVids();
+        Hansel Technologies Limited.slider.TM_owlCarousel();
       }, 0);
       var tdelay = setTimeout(function() {
-        THEMEMASCOT.widget.TM_masonryIsotope();
+        Hansel Technologies Limited.widget.TM_masonryIsotope();
       }, 400);
       $window.trigger("scroll");
       $window.trigger("resize");
@@ -3440,51 +3440,51 @@ var THEMEMASCOT = {};
   };
 
   //window on scroll
-  THEMEMASCOT.windowOnscroll = {
+  Hansel Technologies Limited.windowOnscroll = {
     init: function() {
       $window.on( 'scroll', function(){
-        THEMEMASCOT.header.TM_scroolToTop();
-        THEMEMASCOT.header.TM_activateMenuItemOnReach();
-        THEMEMASCOT.header.TM_topnavAnimate();
+        Hansel Technologies Limited.header.TM_scroolToTop();
+        Hansel Technologies Limited.header.TM_activateMenuItemOnReach();
+        Hansel Technologies Limited.header.TM_topnavAnimate();
       });
     }
   };
 
   //window on resize
-  THEMEMASCOT.windowOnResize = {
+  Hansel Technologies Limited.windowOnResize = {
     init: function() {
       var t = setTimeout(function() {
-        THEMEMASCOT.initialize.TM_equalHeightDivs();
-        THEMEMASCOT.initialize.TM_resizeFullscreen();
-        THEMEMASCOT.header.TM_Memuzord_Megamenu();
-        THEMEMASCOT.header.TM_TopNav_Dropdown_Position();
-        THEMEMASCOT.header.TM_verticalNavHeaderPadding();
-        THEMEMASCOT.header.TM_navLocalScorll();
-        THEMEMASCOT.initialize.TM_fixedFooter();
-        THEMEMASCOT.widget.TM_masonryIsotope();
-        THEMEMASCOT.initialize.TM_stickInParent();
+        Hansel Technologies Limited.initialize.TM_equalHeightDivs();
+        Hansel Technologies Limited.initialize.TM_resizeFullscreen();
+        Hansel Technologies Limited.header.TM_Memuzord_Megamenu();
+        Hansel Technologies Limited.header.TM_TopNav_Dropdown_Position();
+        Hansel Technologies Limited.header.TM_verticalNavHeaderPadding();
+        Hansel Technologies Limited.header.TM_navLocalScorll();
+        Hansel Technologies Limited.initialize.TM_fixedFooter();
+        Hansel Technologies Limited.widget.TM_masonryIsotope();
+        Hansel Technologies Limited.initialize.TM_stickInParent();
       }, 400);
     }
   };
 
 
-  THEMEMASCOT.header.TM_menuzord();
+  Hansel Technologies Limited.header.TM_menuzord();
 
 
   /* ---------------------------------------------------------------------- */
   /* ---------------------------- Call Functions -------------------------- */
   /* ---------------------------------------------------------------------- */
   $document.ready(
-    THEMEMASCOT.documentOnReady.init
+    Hansel Technologies Limited.documentOnReady.init
   );
   $window.on('load',
-    THEMEMASCOT.windowOnLoad.init
+    Hansel Technologies Limited.windowOnLoad.init
   );
   $window.on('resize',
-    THEMEMASCOT.windowOnResize.init
+    Hansel Technologies Limited.windowOnResize.init
   );
 
   //call function before document ready
-  THEMEMASCOT.initialize.TM_preLoaderClickDisable();
+  Hansel Technologies Limited.initialize.TM_preLoaderClickDisable();
 
 })(jQuery);

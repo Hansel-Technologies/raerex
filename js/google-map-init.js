@@ -1,7 +1,7 @@
-var THEMEMASCOT_googlemap_init_obj = {};
-var THEMEMASCOT_GEOCODE_ERROR = "Error";
+var Hansel Technologies Limited_googlemap_init_obj = {};
+var Hansel Technologies Limited_GEOCODE_ERROR = "Error";
 // Google map Styles
-var THEMEMASCOT_googlemap_styles = {
+var Hansel Technologies Limited_googlemap_styles = {
     'default': [],
     'style1':  [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"landscape.man_made","elementType":"geometry.fill","stylers":[{"color":"#eeeeee"}]},{"featureType":"landscape.natural.landcover","elementType":"geometry.fill","stylers":[{"color":"#dddddd"}]},{"featureType":"landscape.natural.terrain","elementType":"geometry.fill","stylers":[{"color":"#dddddd"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#46bcec"},{"visibility":"on"}]},{"featureType":"water","elementType":"geometry.fill","stylers":[{"color":"#f55e45"}]},{"featureType":"water","elementType":"labels.text.fill","stylers":[{"color":"#979797"}]},{"featureType":"water","elementType":"labels.text.stroke","stylers":[{"weight":"0.01"}]}],
                             
@@ -39,12 +39,12 @@ function googlemap_init(dom_obj, coords) {
             latlng = new google.maps.LatLng(0, 0);
         }
         var id = dom_obj.id;
-        THEMEMASCOT_googlemap_init_obj[id] = {};
-        THEMEMASCOT_googlemap_init_obj[id].dom = dom_obj;
-        THEMEMASCOT_googlemap_init_obj[id].point = coords.point;
-        THEMEMASCOT_googlemap_init_obj[id].description = coords.description;
-        THEMEMASCOT_googlemap_init_obj[id].title = coords.title;
-        THEMEMASCOT_googlemap_init_obj[id].opt = {
+        Hansel Technologies Limited_googlemap_init_obj[id] = {};
+        Hansel Technologies Limited_googlemap_init_obj[id].dom = dom_obj;
+        Hansel Technologies Limited_googlemap_init_obj[id].point = coords.point;
+        Hansel Technologies Limited_googlemap_init_obj[id].description = coords.description;
+        Hansel Technologies Limited_googlemap_init_obj[id].title = coords.title;
+        Hansel Technologies Limited_googlemap_init_obj[id].opt = {
             zoom: coords.zoom,
             center: latlng,
             scrollwheel: false,
@@ -55,23 +55,23 @@ function googlemap_init(dom_obj, coords) {
             mapTypeControl: true,
             streetViewControl: true,
             overviewMapControl: true,
-            styles: THEMEMASCOT_googlemap_styles[coords.style ? coords.style : 'default'],
+            styles: Hansel Technologies Limited_googlemap_styles[coords.style ? coords.style : 'default'],
             mapTypeId: google.maps.MapTypeId.ROADMAP
         };
 
         var custom_map = new google.maps.Geocoder();
         custom_map.geocode(coords.latlng!=='' ? {'latLng': latlng} : {"address": coords.address}, function(results, status) {
             if (status == google.maps.GeocoderStatus.OK) {
-                THEMEMASCOT_googlemap_init_obj[id].address = results[0].geometry.location;
+                Hansel Technologies Limited_googlemap_init_obj[id].address = results[0].geometry.location;
                 googlemap_create(id);
             } else {
-                alert(THEMEMASCOT_GEOCODE_ERROR + ' ' + status);
+                alert(Hansel Technologies Limited_GEOCODE_ERROR + ' ' + status);
             }
         });
 
         jQuery(window).resize(function() {
-            if (THEMEMASCOT_googlemap_init_obj[id].map) {
-                THEMEMASCOT_googlemap_init_obj[id].map.setCenter(THEMEMASCOT_googlemap_init_obj[id].address);
+            if (Hansel Technologies Limited_googlemap_init_obj[id].map) {
+                Hansel Technologies Limited_googlemap_init_obj[id].map.setCenter(Hansel Technologies Limited_googlemap_init_obj[id].address);
             }
         });
 
@@ -82,33 +82,33 @@ function googlemap_init(dom_obj, coords) {
 
 function googlemap_create(id) {
     "use strict";
-    if (!THEMEMASCOT_googlemap_init_obj[id].address) { 
+    if (!Hansel Technologies Limited_googlemap_init_obj[id].address) { 
         return false;
     }
-    THEMEMASCOT_googlemap_init_obj[id].map = new google.maps.Map(THEMEMASCOT_googlemap_init_obj[id].dom, THEMEMASCOT_googlemap_init_obj[id].opt);
-    THEMEMASCOT_googlemap_init_obj[id].map.setCenter(THEMEMASCOT_googlemap_init_obj[id].address);
+    Hansel Technologies Limited_googlemap_init_obj[id].map = new google.maps.Map(Hansel Technologies Limited_googlemap_init_obj[id].dom, Hansel Technologies Limited_googlemap_init_obj[id].opt);
+    Hansel Technologies Limited_googlemap_init_obj[id].map.setCenter(Hansel Technologies Limited_googlemap_init_obj[id].address);
     var markerInit = {
-        map: THEMEMASCOT_googlemap_init_obj[id].map,
-        position: THEMEMASCOT_googlemap_init_obj[id].address   //THEMEMASCOT_googlemap_init_obj[id].map.getCenter()
+        map: Hansel Technologies Limited_googlemap_init_obj[id].map,
+        position: Hansel Technologies Limited_googlemap_init_obj[id].address   //Hansel Technologies Limited_googlemap_init_obj[id].map.getCenter()
     };
-    if (THEMEMASCOT_googlemap_init_obj[id].point) { 
-        markerInit.icon = THEMEMASCOT_googlemap_init_obj[id].point;
+    if (Hansel Technologies Limited_googlemap_init_obj[id].point) { 
+        markerInit.icon = Hansel Technologies Limited_googlemap_init_obj[id].point;
     }
-    if (THEMEMASCOT_googlemap_init_obj[id].title) { 
-        markerInit.title = THEMEMASCOT_googlemap_init_obj[id].title;
+    if (Hansel Technologies Limited_googlemap_init_obj[id].title) { 
+        markerInit.title = Hansel Technologies Limited_googlemap_init_obj[id].title;
     }
     var marker = new google.maps.Marker(markerInit);
     var infowindow = new google.maps.InfoWindow({
-        content: THEMEMASCOT_googlemap_init_obj[id].description
+        content: Hansel Technologies Limited_googlemap_init_obj[id].description
     });
     google.maps.event.addListener(marker, "click", function() {
-        infowindow.open(THEMEMASCOT_googlemap_init_obj[id].map, marker);
+        infowindow.open(Hansel Technologies Limited_googlemap_init_obj[id].map, marker);
     });
 }
 
 
 function googlemap_refresh(){
-    for(id in THEMEMASCOT_googlemap_init_obj){
+    for(id in Hansel Technologies Limited_googlemap_init_obj){
         googlemap_create(id);
     }
 }
