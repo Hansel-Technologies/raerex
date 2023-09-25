@@ -1,4 +1,4 @@
-var Hansel Technologies Limited = {};
+var HanselTechnologiesLimited = {};
 
 (function($) {
   "use strict";
@@ -31,7 +31,7 @@ var Hansel Technologies Limited = {};
   var $gallery_isotope_sorter_parent = $( gallery_isotope_sorter_string );
   var gallery_isotope_sorter = ".isotope-layout-sorter a";
 
-  Hansel Technologies Limited.isMobile = {
+  HanselTechnologiesLimited.isMobile = {
     Android: function() {
       return navigator.userAgent.match(/Android/i);
     },
@@ -48,7 +48,7 @@ var Hansel Technologies Limited = {};
       return navigator.userAgent.match(/IEMobile/i);
     },
     any: function() {
-      return (Hansel Technologies Limited.isMobile.Android() || Hansel Technologies Limited.isMobile.BlackBerry() || Hansel Technologies Limited.isMobile.iOS() || Hansel Technologies Limited.isMobile.Opera() || Hansel Technologies Limited.isMobile.Windows());
+      return (HanselTechnologiesLimited.isMobile.Android() || HanselTechnologiesLimited.isMobile.BlackBerry() || HanselTechnologiesLimited.isMobile.iOS() || HanselTechnologiesLimited.isMobile.Opera() || HanselTechnologiesLimited.isMobile.Windows());
     }
   };
 
@@ -97,7 +97,7 @@ var Hansel Technologies Limited = {};
     }
   }
 
-  Hansel Technologies Limited.isRTL = {
+  HanselTechnologiesLimited.isRTL = {
     check: function() {
       if( $( "html" ).attr("dir") === "rtl" ) {
         return true;
@@ -107,7 +107,7 @@ var Hansel Technologies Limited = {};
     }
   };
 
-  Hansel Technologies Limited.isLTR = {
+  HanselTechnologiesLimited.isLTR = {
     check: function() {
       if( $( "html" ).attr("dir") !== "rtl" ) {
         return true;
@@ -117,7 +117,7 @@ var Hansel Technologies Limited = {};
     }
   };
 
-  Hansel Technologies Limited.urlParameter = {
+  HanselTechnologiesLimited.urlParameter = {
     get: function(sParam) {
       var sPageURL = decodeURIComponent(window.location.search.substring(1)),
         sURLVariables = sPageURL.split('&'),
@@ -134,37 +134,37 @@ var Hansel Technologies Limited = {};
     }
   };
 
-  Hansel Technologies Limited.initialize = {
+  HanselTechnologiesLimited.initialize = {
 
     init: function() {
-      Hansel Technologies Limited.initialize.TM_demoSwitcher();
-      Hansel Technologies Limited.initialize.TM_datePicker();
-      Hansel Technologies Limited.initialize.TM_niceSelect();
-      Hansel Technologies Limited.initialize.TM_parallaxScrollInit();
-      Hansel Technologies Limited.initialize.TM_bootstrapNavTab();
-      Hansel Technologies Limited.initialize.TM_tiltParallaxAnimation();
-      Hansel Technologies Limited.initialize.TM_appearVariousItems();
-      Hansel Technologies Limited.initialize.TM_paroller();
-      Hansel Technologies Limited.initialize.TM_textillate();
-      Hansel Technologies Limited.initialize.TM_parallaxBgInit();
+      HanselTechnologiesLimited.initialize.TM_demoSwitcher();
+      HanselTechnologiesLimited.initialize.TM_datePicker();
+      HanselTechnologiesLimited.initialize.TM_niceSelect();
+      HanselTechnologiesLimited.initialize.TM_parallaxScrollInit();
+      HanselTechnologiesLimited.initialize.TM_bootstrapNavTab();
+      HanselTechnologiesLimited.initialize.TM_tiltParallaxAnimation();
+      HanselTechnologiesLimited.initialize.TM_appearVariousItems();
+      HanselTechnologiesLimited.initialize.TM_paroller();
+      HanselTechnologiesLimited.initialize.TM_textillate();
+      HanselTechnologiesLimited.initialize.TM_parallaxBgInit();
 
-      Hansel Technologies Limited.initialize.TM_navbar_scrolltofixed_hide();
-      Hansel Technologies Limited.initialize.TM_dataTables();
-      Hansel Technologies Limited.initialize.TM_toggleNavSearchIcon();
-      Hansel Technologies Limited.initialize.TM_fixedFooter();
-      Hansel Technologies Limited.initialize.TM_ddslick();
-      Hansel Technologies Limited.initialize.TM_sliderRange();
-      Hansel Technologies Limited.initialize.TM_platformDetect();
-      Hansel Technologies Limited.initialize.TM_customDataAttributes();
-      Hansel Technologies Limited.initialize.TM_resizeFullscreen();
-      Hansel Technologies Limited.initialize.TM_lightgallery_lightbox();
-      Hansel Technologies Limited.initialize.TM_lightgallery_lightbox_reset();
-      Hansel Technologies Limited.initialize.TM_prettyPhoto_lightbox();
-      Hansel Technologies Limited.initialize.TM_nivolightbox();
-      Hansel Technologies Limited.initialize.TM_YTPlayer();
-      Hansel Technologies Limited.initialize.TM_CustomColumnsHolderResponsiveStyler();
-      Hansel Technologies Limited.initialize.TM_equalHeightDivs();
-      Hansel Technologies Limited.initialize.TM_wow();
+      HanselTechnologiesLimited.initialize.TM_navbar_scrolltofixed_hide();
+      HanselTechnologiesLimited.initialize.TM_dataTables();
+      HanselTechnologiesLimited.initialize.TM_toggleNavSearchIcon();
+      HanselTechnologiesLimited.initialize.TM_fixedFooter();
+      HanselTechnologiesLimited.initialize.TM_ddslick();
+      HanselTechnologiesLimited.initialize.TM_sliderRange();
+      HanselTechnologiesLimited.initialize.TM_platformDetect();
+      HanselTechnologiesLimited.initialize.TM_customDataAttributes();
+      HanselTechnologiesLimited.initialize.TM_resizeFullscreen();
+      HanselTechnologiesLimited.initialize.TM_lightgallery_lightbox();
+      HanselTechnologiesLimited.initialize.TM_lightgallery_lightbox_reset();
+      HanselTechnologiesLimited.initialize.TM_prettyPhoto_lightbox();
+      HanselTechnologiesLimited.initialize.TM_nivolightbox();
+      HanselTechnologiesLimited.initialize.TM_YTPlayer();
+      HanselTechnologiesLimited.initialize.TM_CustomColumnsHolderResponsiveStyler();
+      HanselTechnologiesLimited.initialize.TM_equalHeightDivs();
+      HanselTechnologiesLimited.initialize.TM_wow();
     },
 
 
@@ -322,7 +322,7 @@ var Hansel Technologies Limited = {};
     /* -------------------------- Background Parallax ----------------------- */
     /* ---------------------------------------------------------------------- */
     TM_parallaxBgInit: function() {
-      if (!Hansel Technologies Limited.isMobile.any() && $window.width() >= 800 ) {
+      if (!HanselTechnologiesLimited.isMobile.any() && $window.width() >= 800 ) {
         $('.parallax').each(function() {
           var data_parallax_ratio = ( $(this).data("parallax-ratio") === undefined ) ? '0.5': $(this).data("parallax-ratio");
           $(this).parallax("50%", data_parallax_ratio);
@@ -508,7 +508,7 @@ var Hansel Technologies Limited = {};
     /* ------------------------------- Platform detect  --------------------- */
     /* ---------------------------------------------------------------------- */
     TM_platformDetect: function() {
-      if (Hansel Technologies Limited.isMobile.any()) {
+      if (HanselTechnologiesLimited.isMobile.any()) {
         $html.addClass("mobile");
       } else {
         $html.addClass("no-mobile");
@@ -796,8 +796,8 @@ var Hansel Technologies Limited = {};
           overflowY: 'scroll', // as we know that popup content is tall we set scroll overflow by default to avoid jump
           callbacks: {
           parseAjax: function(mfpResponse) {
-            Hansel Technologies Limited.initialize.TM_sliderRange();
-            Hansel Technologies Limited.initialize.TM_ddslick();
+            HanselTechnologiesLimited.initialize.TM_sliderRange();
+            HanselTechnologiesLimited.initialize.TM_ddslick();
           }
           }
         });
@@ -1006,7 +1006,7 @@ var Hansel Technologies Limited = {};
       if( $loadmore_btn_lightgallery_lightbox.length > 0 ) {
         $loadmore_btn_lightgallery_lightbox.on('click', function(e) {
           $(".lightgallery-lightbox").data("lightGallery").destroy(true);
-          Hansel Technologies Limited.initialize.TM_lightgallery_lightbox();
+          HanselTechnologiesLimited.initialize.TM_lightgallery_lightbox();
         });
       }
     },
@@ -1277,24 +1277,24 @@ var Hansel Technologies Limited = {};
   };
 
 
-  Hansel Technologies Limited.header = {
+  HanselTechnologiesLimited.header = {
 
     init: function() {
 
       var t = setTimeout(function() {
-        Hansel Technologies Limited.header.TM_verticalNavHeaderPadding();
-        Hansel Technologies Limited.header.TM_Memuzord_Megamenu();
-        Hansel Technologies Limited.header.TM_TopNav_Dropdown_Position();
-        Hansel Technologies Limited.header.TM_fullscreenMenu();
-        Hansel Technologies Limited.header.TM_sidePanelReveal();
-        Hansel Technologies Limited.header.TM_scroolToTopOnClick();
-        Hansel Technologies Limited.header.TM_scrollToFixed();
-        Hansel Technologies Limited.header.TM_topnavAnimate();
-        Hansel Technologies Limited.header.TM_scrolltoTarget();
-        Hansel Technologies Limited.header.TM_navLocalScorll();
-        Hansel Technologies Limited.header.TM_menuCollapseOnClick();
-        Hansel Technologies Limited.header.TM_homeParallaxFadeEffect();
-        Hansel Technologies Limited.header.TM_topsearch_toggle();
+        HanselTechnologiesLimited.header.TM_verticalNavHeaderPadding();
+        HanselTechnologiesLimited.header.TM_Memuzord_Megamenu();
+        HanselTechnologiesLimited.header.TM_TopNav_Dropdown_Position();
+        HanselTechnologiesLimited.header.TM_fullscreenMenu();
+        HanselTechnologiesLimited.header.TM_sidePanelReveal();
+        HanselTechnologiesLimited.header.TM_scroolToTopOnClick();
+        HanselTechnologiesLimited.header.TM_scrollToFixed();
+        HanselTechnologiesLimited.header.TM_topnavAnimate();
+        HanselTechnologiesLimited.header.TM_scrolltoTarget();
+        HanselTechnologiesLimited.header.TM_navLocalScorll();
+        HanselTechnologiesLimited.header.TM_menuCollapseOnClick();
+        HanselTechnologiesLimited.header.TM_homeParallaxFadeEffect();
+        HanselTechnologiesLimited.header.TM_topsearch_toggle();
       }, 0);
 
     },
@@ -1370,7 +1370,7 @@ var Hansel Technologies Limited = {};
       }
       $('.side-panel-trigger').on('click', function(e) {
         $body.toggleClass("side-panel-open");
-        if ( Hansel Technologies Limited.isMobile.any() ) {
+        if ( HanselTechnologiesLimited.isMobile.any() ) {
           $body.toggleClass("overflow-hidden");
         }
         return false;
@@ -1800,21 +1800,21 @@ var Hansel Technologies Limited = {};
 
   };
 
-  Hansel Technologies Limited.widget = {
+  HanselTechnologiesLimited.widget = {
 
     init: function() {
 
       var t = setTimeout(function() {
-        Hansel Technologies Limited.widget.TM_shopClickEvents();
-        Hansel Technologies Limited.widget.TM_masonryIsotope();
-        Hansel Technologies Limited.widget.TM_pieChart();
-        Hansel Technologies Limited.widget.TM_progressBar();
-        Hansel Technologies Limited.widget.TM_funfact();
-        Hansel Technologies Limited.widget.TM_instagramFeed();
-        Hansel Technologies Limited.widget.TM_jflickrfeed();
-        Hansel Technologies Limited.widget.TM_accordion_toggles();
-        Hansel Technologies Limited.widget.TM_tooltip();
-        Hansel Technologies Limited.widget.TM_countDownTimer();
+        HanselTechnologiesLimited.widget.TM_shopClickEvents();
+        HanselTechnologiesLimited.widget.TM_masonryIsotope();
+        HanselTechnologiesLimited.widget.TM_pieChart();
+        HanselTechnologiesLimited.widget.TM_progressBar();
+        HanselTechnologiesLimited.widget.TM_funfact();
+        HanselTechnologiesLimited.widget.TM_instagramFeed();
+        HanselTechnologiesLimited.widget.TM_jflickrfeed();
+        HanselTechnologiesLimited.widget.TM_accordion_toggles();
+        HanselTechnologiesLimited.widget.TM_tooltip();
+        HanselTechnologiesLimited.widget.TM_countDownTimer();
       }, 0);
 
     },
@@ -1857,7 +1857,7 @@ var Hansel Technologies Limited = {};
               tmMasonryItemsHeightResizer(size, $each_istope);
 
               isotope_inner.isotope({
-                isOriginLeft: Hansel Technologies Limited.isLTR.check(),
+                isOriginLeft: HanselTechnologiesLimited.isLTR.check(),
                 itemSelector: '.isotope-item',
                 layoutMode: "masonry",
                 masonry: {
@@ -1874,7 +1874,7 @@ var Hansel Technologies Limited = {};
             } else{
               var isotope_inner = $each_istope.children('.isotope-layout-inner');
               isotope_inner.isotope({
-                isOriginLeft: Hansel Technologies Limited.isLTR.check(),
+                isOriginLeft: HanselTechnologiesLimited.isLTR.check(),
                 itemSelector: '.isotope-item',
                 layoutMode: "fitRows",
                 getSortData : {
@@ -1910,7 +1910,7 @@ var Hansel Technologies Limited = {};
           size = $this.find('.isotope-item-sizer').width();
           tmMasonryItemsHeightResizer(size, $this);
           isotope_inner.isotope({
-            isOriginLeft: Hansel Technologies Limited.isLTR.check(),
+            isOriginLeft: HanselTechnologiesLimited.isLTR.check(),
             itemSelector: '.isotope-item',
             layoutMode: "masonry",
             masonry: {
@@ -1922,7 +1922,7 @@ var Hansel Technologies Limited = {};
           var $this = $('#'+linkwith);
           var isotope_inner = $this.children('.isotope-layout-inner');
           isotope_inner.isotope({
-            isOriginLeft: Hansel Technologies Limited.isLTR.check(),
+            isOriginLeft: HanselTechnologiesLimited.isLTR.check(),
             itemSelector: '.isotope-item',
             layoutMode: "fitRows",
             filter: fselector
@@ -1943,7 +1943,7 @@ var Hansel Technologies Limited = {};
           $('#'+linkwith).isotope('shuffle');
         } else {
           $('#'+linkwith).isotope({
-            isOriginLeft: Hansel Technologies Limited.isLTR.check(),
+            isOriginLeft: HanselTechnologiesLimited.isLTR.check(),
             sortBy: sortby
           });
         }
@@ -1956,13 +1956,13 @@ var Hansel Technologies Limited = {};
     TM_isotopeGridRearrange: function() {
       if ($gallery_isotope.hasClass("masonry")){
         $gallery_isotope.isotope({
-          isOriginLeft: Hansel Technologies Limited.isLTR.check(),
+          isOriginLeft: HanselTechnologiesLimited.isLTR.check(),
           itemSelector: '.isotope-item',
           layoutMode: "masonry"
         });
       } else{
         $gallery_isotope.isotope({
-          isOriginLeft: Hansel Technologies Limited.isLTR.check(),
+          isOriginLeft: HanselTechnologiesLimited.isLTR.check(),
           itemSelector: '.isotope-item',
           layoutMode: "fitRows"
         });
@@ -2311,7 +2311,7 @@ var Hansel Technologies Limited = {};
             bar.css('width', '0%').animate({'width': percentage + '%'}, 2000);
 
             if (current_item.hasClass('progress-bar-floating-percent')) {
-              if(Hansel Technologies Limited.isRTL.check()) {
+              if(HanselTechnologiesLimited.isRTL.check()) {
                 percent.css('right', '0%').animate({'right': percentage + '%'}, 2000);
               } else {
                 percent.css('left', '0%').animate({'left': percentage + '%'}, 2000);
@@ -2427,7 +2427,7 @@ var Hansel Technologies Limited = {};
         }, function() {
           $twitter_feed_carousel.find('ul').addClass("owl-carousel owl-theme");
           $twitter_feed_carousel.find('ul').owlCarousel({
-            rtl: Hansel Technologies Limited.isRTL.check(),
+            rtl: HanselTechnologiesLimited.isRTL.check(),
             autoplay: true,
             autoplayTimeout: 2000,
             loop: true,
@@ -2440,19 +2440,19 @@ var Hansel Technologies Limited = {};
     }
   };
 
-  Hansel Technologies Limited.slider = {
+  HanselTechnologiesLimited.slider = {
 
     init: function() {
 
       var t = setTimeout(function() {
-        Hansel Technologies Limited.slider.TM_MultiScrollSlider();
-        Hansel Technologies Limited.slider.TM_FullPageSlider();
-        Hansel Technologies Limited.slider.TM_PagePilingSlider();
-        Hansel Technologies Limited.slider.TM_typedAnimation();
-        Hansel Technologies Limited.slider.TM_slick();
-        Hansel Technologies Limited.slider.TM_maximageSlider();
-        Hansel Technologies Limited.slider.TM_bxslider();
-        Hansel Technologies Limited.slider.TM_beforeAfterSlider();
+        HanselTechnologiesLimited.slider.TM_MultiScrollSlider();
+        HanselTechnologiesLimited.slider.TM_FullPageSlider();
+        HanselTechnologiesLimited.slider.TM_PagePilingSlider();
+        HanselTechnologiesLimited.slider.TM_typedAnimation();
+        HanselTechnologiesLimited.slider.TM_slick();
+        HanselTechnologiesLimited.slider.TM_maximageSlider();
+        HanselTechnologiesLimited.slider.TM_bxslider();
+        HanselTechnologiesLimited.slider.TM_beforeAfterSlider();
       }, 0);
 
     },
@@ -2720,7 +2720,7 @@ var Hansel Technologies Limited = {};
           var items_tablet = ( $this.data("tablet") === undefined ) ? 2: $this.data("tablet");
 
           $this.slick({
-            rtl: Hansel Technologies Limited.isRTL.check(),
+            rtl: HanselTechnologiesLimited.isRTL.check(),
             infinite: data_loop,
             autoplay: data_autoplay,
             autoplaySpeed: data_duration,
@@ -2766,7 +2766,7 @@ var Hansel Technologies Limited = {};
           var $this = $(this);
           var id =  $this.attr('id');
           $this.slick({
-            rtl: Hansel Technologies Limited.isRTL.check(),
+            rtl: HanselTechnologiesLimited.isRTL.check(),
             slidesToShow: 1,
             slidesToScroll: 1,
             arrows: false,
@@ -2775,7 +2775,7 @@ var Hansel Technologies Limited = {};
           });
 
           $('.slider-nav-'+id).slick({
-            rtl: Hansel Technologies Limited.isRTL.check(),
+            rtl: HanselTechnologiesLimited.isRTL.check(),
             slidesToShow: 7,
             slidesToScroll: 1,
             asNavFor: $this,
@@ -2822,7 +2822,7 @@ var Hansel Technologies Limited = {};
 
 
 
-            rtl: Hansel Technologies Limited.isRTL.check(),
+            rtl: HanselTechnologiesLimited.isRTL.check(),
             autoplay: data_autoplay,
             autoplayTimeout: data_duration,
             autoHeight: true,
@@ -2853,7 +2853,7 @@ var Hansel Technologies Limited = {};
           var data_margin = ( $this.data("margin") === undefined ) ? 30: $this.data("margin");
 
           $this.owlCarousel({
-            rtl: Hansel Technologies Limited.isRTL.check(),
+            rtl: HanselTechnologiesLimited.isRTL.check(),
             animateOut: 'slideOutDown',
             animateIn: 'flipInX',
 
@@ -2887,7 +2887,7 @@ var Hansel Technologies Limited = {};
           var data_margin = ( $this.data("margin") === undefined ) ? 30: $this.data("margin");
 
           $this.owlCarousel({
-            rtl: Hansel Technologies Limited.isRTL.check(),
+            rtl: HanselTechnologiesLimited.isRTL.check(),
             autoplay: data_autoplay,
             autoplayTimeout: data_duration,
             autoHeight: true,
@@ -2924,7 +2924,7 @@ var Hansel Technologies Limited = {};
           var items_tablet = ( $this.data("tablet") === undefined ) ? 2: $this.data("tablet");
 
           $this.owlCarousel({
-            rtl: Hansel Technologies Limited.isRTL.check(),
+            rtl: HanselTechnologiesLimited.isRTL.check(),
             autoplay: data_autoplay,
             autoplayTimeout: data_duration,
             smartSpeed: data_smartspeed,
@@ -2981,7 +2981,7 @@ var Hansel Technologies Limited = {};
           var items_tablet = ( $this.data("tablet") === undefined ) ? 2: $this.data("tablet");
 
           $this.owlCarousel({
-            rtl: Hansel Technologies Limited.isRTL.check(),
+            rtl: HanselTechnologiesLimited.isRTL.check(),
             autoplay: data_autoplay,
             autoplayTimeout: data_duration,
             smartSpeed: data_smartspeed,
@@ -3039,7 +3039,7 @@ var Hansel Technologies Limited = {};
           var items_tablet = ( $this.data("tablet") === undefined ) ? 2: $this.data("tablet");
 
           $this.owlCarousel({
-            rtl: Hansel Technologies Limited.isRTL.check(),
+            rtl: HanselTechnologiesLimited.isRTL.check(),
             autoplay: data_autoplay,
             autoplayTimeout: data_duration,
             smartSpeed: data_smartspeed,
@@ -3096,7 +3096,7 @@ var Hansel Technologies Limited = {};
           var items_tablet = ( $this.data("tablet") === undefined ) ? 2: $this.data("tablet");
 
           $this.owlCarousel({
-            rtl: Hansel Technologies Limited.isRTL.check(),
+            rtl: HanselTechnologiesLimited.isRTL.check(),
             autoplay: data_autoplay,
             autoplayTimeout: data_duration,
             smartSpeed: data_smartspeed,
@@ -3153,7 +3153,7 @@ var Hansel Technologies Limited = {};
           var items_tablet = ( $this.data("tablet") === undefined ) ? 2: $this.data("tablet");
 
           $this.owlCarousel({
-            rtl: Hansel Technologies Limited.isRTL.check(),
+            rtl: HanselTechnologiesLimited.isRTL.check(),
             autoplay: data_autoplay,
             autoplayTimeout: data_duration,
             smartSpeed: data_smartspeed,
@@ -3210,7 +3210,7 @@ var Hansel Technologies Limited = {};
           var items_tablet = ( $this.data("tablet") === undefined ) ? 3: $this.data("tablet");
 
           $this.owlCarousel({
-            rtl: Hansel Technologies Limited.isRTL.check(),
+            rtl: HanselTechnologiesLimited.isRTL.check(),
             autoplay: data_autoplay,
             autoplayTimeout: data_duration,
             smartSpeed: data_smartspeed,
@@ -3267,7 +3267,7 @@ var Hansel Technologies Limited = {};
           var items_tablet = ( $this.data("tablet") === undefined ) ? 4: $this.data("tablet");
 
           $this.owlCarousel({
-            rtl: Hansel Technologies Limited.isRTL.check(),
+            rtl: HanselTechnologiesLimited.isRTL.check(),
             autoplay: data_autoplay,
             autoplayTimeout: data_duration,
             smartSpeed: data_smartspeed,
@@ -3409,30 +3409,30 @@ var Hansel Technologies Limited = {};
   /* ---------- document ready, window load, scroll and resize ------------ */
   /* ---------------------------------------------------------------------- */
   //document ready
-  Hansel Technologies Limited.documentOnReady = {
+  HanselTechnologiesLimited.documentOnReady = {
     init: function() {
-      Hansel Technologies Limited.initialize.init();
-      Hansel Technologies Limited.header.init();
-      Hansel Technologies Limited.slider.init();
-      Hansel Technologies Limited.widget.init();
-      Hansel Technologies Limited.windowOnscroll.init();
+      HanselTechnologiesLimited.initialize.init();
+      HanselTechnologiesLimited.header.init();
+      HanselTechnologiesLimited.slider.init();
+      HanselTechnologiesLimited.widget.init();
+      HanselTechnologiesLimited.windowOnscroll.init();
     }
   };
 
   //window on load
-  Hansel Technologies Limited.windowOnLoad = {
+  HanselTechnologiesLimited.windowOnLoad = {
     init: function() {
       var t = setTimeout(function() {
-        Hansel Technologies Limited.initialize.TM_magnificPopup_lightbox();
-        Hansel Technologies Limited.initialize.TM_preLoaderOnLoad();
-        Hansel Technologies Limited.initialize.TM_parallaxBgInit();
-        Hansel Technologies Limited.widget.TM_tweetie();
-        Hansel Technologies Limited.initialize.TM_stickInParent();
-        Hansel Technologies Limited.initialize.TM_fitVids();
-        Hansel Technologies Limited.slider.TM_owlCarousel();
+        HanselTechnologiesLimited.initialize.TM_magnificPopup_lightbox();
+        HanselTechnologiesLimited.initialize.TM_preLoaderOnLoad();
+        HanselTechnologiesLimited.initialize.TM_parallaxBgInit();
+        HanselTechnologiesLimited.widget.TM_tweetie();
+        HanselTechnologiesLimited.initialize.TM_stickInParent();
+        HanselTechnologiesLimited.initialize.TM_fitVids();
+        HanselTechnologiesLimited.slider.TM_owlCarousel();
       }, 0);
       var tdelay = setTimeout(function() {
-        Hansel Technologies Limited.widget.TM_masonryIsotope();
+        HanselTechnologiesLimited.widget.TM_masonryIsotope();
       }, 400);
       $window.trigger("scroll");
       $window.trigger("resize");
@@ -3440,51 +3440,51 @@ var Hansel Technologies Limited = {};
   };
 
   //window on scroll
-  Hansel Technologies Limited.windowOnscroll = {
+  HanselTechnologiesLimited.windowOnscroll = {
     init: function() {
       $window.on( 'scroll', function(){
-        Hansel Technologies Limited.header.TM_scroolToTop();
-        Hansel Technologies Limited.header.TM_activateMenuItemOnReach();
-        Hansel Technologies Limited.header.TM_topnavAnimate();
+        HanselTechnologiesLimited.header.TM_scroolToTop();
+        HanselTechnologiesLimited.header.TM_activateMenuItemOnReach();
+        HanselTechnologiesLimited.header.TM_topnavAnimate();
       });
     }
   };
 
   //window on resize
-  Hansel Technologies Limited.windowOnResize = {
+  HanselTechnologiesLimited.windowOnResize = {
     init: function() {
       var t = setTimeout(function() {
-        Hansel Technologies Limited.initialize.TM_equalHeightDivs();
-        Hansel Technologies Limited.initialize.TM_resizeFullscreen();
-        Hansel Technologies Limited.header.TM_Memuzord_Megamenu();
-        Hansel Technologies Limited.header.TM_TopNav_Dropdown_Position();
-        Hansel Technologies Limited.header.TM_verticalNavHeaderPadding();
-        Hansel Technologies Limited.header.TM_navLocalScorll();
-        Hansel Technologies Limited.initialize.TM_fixedFooter();
-        Hansel Technologies Limited.widget.TM_masonryIsotope();
-        Hansel Technologies Limited.initialize.TM_stickInParent();
+        HanselTechnologiesLimited.initialize.TM_equalHeightDivs();
+        HanselTechnologiesLimited.initialize.TM_resizeFullscreen();
+        HanselTechnologiesLimited.header.TM_Memuzord_Megamenu();
+        HanselTechnologiesLimited.header.TM_TopNav_Dropdown_Position();
+        HanselTechnologiesLimited.header.TM_verticalNavHeaderPadding();
+        HanselTechnologiesLimited.header.TM_navLocalScorll();
+        HanselTechnologiesLimited.initialize.TM_fixedFooter();
+        HanselTechnologiesLimited.widget.TM_masonryIsotope();
+        HanselTechnologiesLimited.initialize.TM_stickInParent();
       }, 400);
     }
   };
 
 
-  Hansel Technologies Limited.header.TM_menuzord();
+  HanselTechnologiesLimited.header.TM_menuzord();
 
 
   /* ---------------------------------------------------------------------- */
   /* ---------------------------- Call Functions -------------------------- */
   /* ---------------------------------------------------------------------- */
   $document.ready(
-    Hansel Technologies Limited.documentOnReady.init
+    HanselTechnologiesLimited.documentOnReady.init
   );
   $window.on('load',
-    Hansel Technologies Limited.windowOnLoad.init
+    HanselTechnologiesLimited.windowOnLoad.init
   );
   $window.on('resize',
-    Hansel Technologies Limited.windowOnResize.init
+    HanselTechnologiesLimited.windowOnResize.init
   );
 
   //call function before document ready
-  Hansel Technologies Limited.initialize.TM_preLoaderClickDisable();
+  HanselTechnologiesLimited.initialize.TM_preLoaderClickDisable();
 
 })(jQuery);

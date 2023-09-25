@@ -32,8 +32,8 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
 
         $botcheck = $_POST['form_botcheck'];
 
-        $toemail = 'spam.Hansel Technologies Limited@gmail.com'; // Your Email Address
-        $toname = 'Hansel Technologies Limited';                // Receiver Name
+        $toemail = 'spam.HanselTechnologiesLimited@gmail.com'; // Your Email Address
+        $toname = 'HanselTechnologiesLimited';                // Receiver Name
 
         if( $botcheck == '' ) {
 

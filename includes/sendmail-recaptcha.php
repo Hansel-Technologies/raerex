@@ -55,8 +55,8 @@ if( isset( $_POST['submit'] ) ) {
 
                 $botcheck = $_POST['form_botcheck'];
 
-                $toemail = 'spam.Hansel Technologies Limited@gmail.com'; // Your Email Address
-                $toname = 'Hansel Technologies Limited'; // Your Name
+                $toemail = 'spam.HanselTechnologiesLimited@gmail.com'; // Your Email Address
+                $toname = 'HanselTechnologiesLimited'; // Your Name
 
                 if( $botcheck == '' ) {
 
