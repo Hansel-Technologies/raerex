@@ -8,7 +8,7 @@
 <meta name="keywords" content="ac, air condition, air conditioning, business, cooling, handyman, heat, heating, home repair, hvac, installation, maintenance, refrigeration, repairing, ventilation"/>
 <meta name="author" content="HanselTechnologiesLimited"/>
 <!-- Page Title -->
-<title>Raerex - Portfolio</title>
+<title>Raerex - Gallery</title>
 <!-- Favicon and Touch Icons -->
 <link href="images/favicon.png" rel="shortcut icon" type="image/png">
 <link href="images/apple-touch-icon.png" rel="apple-touch-icon">
@@ -125,7 +125,7 @@
               </ul>
             </div>
             <div class="element pt-0 pt-lg-10 pb-0">
-              <a href="ajax-load/form-appointment.html" class="btn btn-theme-colored2 btn-flat btn-sm ajaxload-popup">Make an Appointment</a>
+              <a href="ajax-load/form-appointment.html" class="btn btn-theme-colored2 btn-flat btn-sm ajaxload-popup">Contact Us</a>
             </div>
           </div>
         </div>
@@ -157,7 +157,7 @@
                     </li>
                     
                     <li class="active menu-item">
-                      <a href="portfolio.html">Portfolio</a>                      
+                      <a href="gallery.html">Gallery</a>                      
                     </li>
                     <li class="active menu-item">
                       <a href="careers.html">Careers</a>                      
@@ -205,7 +205,7 @@
         <div class="section-content">
           <div class="row">
             <div class="col-md-12 text-center">
-              <h2 class="title text-white">Portfolio</h2>
+              <h2 class="title text-white">Gallery</h2>
               <nav role="navigation" class="breadcrumb-trail breadcrumbs">
                 <div class="breadcrumbs">
                   <span class="trail-item trail-begin">
@@ -213,7 +213,7 @@
                   </span>
                   <span><i class="fa fa-angle-right"></i></span>               
                   
-                  <span class="trail-item trail-end text-theme-colored1">Portfolio</span>
+                  <span class="trail-item trail-end text-theme-colored1">Gallery</span>
                 </div>
               </nav>
             </div>
@@ -223,54 +223,51 @@
     </section>
     <!-- Section: inner-header End -->
 
-    <section class="client-grid">
-      <div class="client-item">
-        <img src="images/services/service2.jpg" alt="Client 1">
-        <h4>KFC</h4>
-        <p>Project Description for Client 1</p>
-      </div>
-      <div class="client-item">
-        <img src="images/services/service1.jpg" alt="Client 2">
-        <h4>Afican Development Bank</h4>
-        <p>Project Description for Client 2</p>
-      </div>
-      <div class="client-item">
-        <img src="images/services/service2.jpg" alt="Client 2">
-        <h4>Equity Afya</h4>
-        <p>Project Description for Client 2</p>
-      </div>
-      <div class="client-item">
-        <img src="images/services/service31.jpg" alt="Client 2">
-        <h4>Equity Afya</h4>
-        <p>Project Description for Client 2</p>
-      </div>
+    
 
-      <div class="client-item">
-        <img src="images/services/service1.jpg" alt="Client 2">
-        <h4>Equity Afya</h4>
-        <p>Project Description for Client 2</p>
+    <section style="padding: 20px;">
+      <div class="tm-sc-gallery tm-sc-gallery-grid">
+        <!-- Isotope Gallery Grid -->
+        <div class="isotope-layout masonry grid-5 gutter-10 clearfix lightgallery-lightbox">
+          <div class="isotope-layout-inner">
+            <div class="isotope-item isotope-item-sizer"></div>
+    
+            <!-- Loop to create Isotope items for all pages (1 to 5) -->
+            <script>
+              for (var i = 1; i <= 200; i++) {
+                var pageNumber = Math.ceil(i / 20); // Calculate the page number
+                var imagePath = `images/gallery2/site (${i}).jpg`; // Path to your image
+    
+                document.write(`
+                  <!-- Isotope Item for Page ${pageNumber} -->
+                  <div class="isotope-item page_${pageNumber}">
+                    <div class="isotope-item-inner">
+                      <div class="tm-gallery">
+                        <div class="tm-gallery-inner">
+                          <div class="thumb">
+                            <a class="lightgallery-trigger styled-icons-item" data-exthumbimage="${imagePath}" data-src="${imagePath}" title="Gallery ${i}" href="${imagePath}">
+                              <img width="672" height="448" src="${imagePath}" class="" alt="Image ${i}" />
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                `);
+              }
+            </script>
+            <!-- End of Loop -->
+          </div>
+        </div>
+        <!-- End Isotope Gallery Grid -->
       </div>
-
-      <div class="client-item">
-        <img src="images/services/service1.jpg" alt="Client 2">
-        <h4></h4>
-        <p>Project Description for Client 2</p>
-      </div>
-
-      <div class="client-item">
-        <img src="images/services/service1.jpg" alt="Client 2">
-        <h4>TDB</h4>
-        <p>Project Description for Client 2</p>
-      </div>
-
-      <div class="client-item">
-        <img src="images/services/service1.jpg" alt="Client 2">
-        <h4>Equity Bank</h4>
-        <p>Project Description for Client 2</p>
-      </div>
-      <!-- Add more client items as needed -->
     </section>
     
+    
+
+    <div class="pagination">
+      <ul class="page-numbers"></ul>
+    </div>
 
  
   
@@ -337,6 +334,7 @@
     </section>
 
   </div>
+  
   <!-- end main-content -->
   <!-- Footer -->
   <footer id="footer" class="footer bg-no-repeat" data-tm-bg-img="images/footer-img1.png">
@@ -368,7 +366,7 @@
                 <ul id="footer-page-list" class="menu">
                   <li><a href="index.html">Home</a></li>
                   <!--<li><a href="#">Gallery</a></li>-->
-                  <li><a href="portfolio.html">Portfolio</a></li>
+                  <li><a href="gallery.html">Gallery</a></li>
                   <li><a href="homesolutions.html">Products</a></li>
                 </ul>
               </div>

@@ -6290,6 +6290,8 @@ textarea.form-control {
   .isotope-layout.gutter-60 .isotope-item {
     padding: 0 60px;
     margin: 0 0 120px; }
+    
+
 
 /* -------- Isotop Item Media Query ---------- */
 @media (max-width: 1199.98px) {
@@ -15632,30 +15634,49 @@ footer#footer.footer-inverted .widget.widget_archive ul > li, footer#footer.foot
  * -----------------------------------------------
 */
 .service-item {
+  height: 100%;
   border: 1px solid #2a3e58;
   padding: 30px;
-  border-radius: 10px; }
-  .service-item .service-content .service-text {
-    color: #000000; }
-  .service-item .service-thumb {
-    margin-bottom: 20px; }
-    .service-item .service-thumb img {
-      border-radius: 10px; }
-  .service-item .service-link {
-    margin-top: 55px;
-    display: inline-block;
-    position: relative; }
-    .service-item .service-link:after {
-      content: "";
-      height: 2px;
-      width: 75px;
-      position: absolute;
-      left: 0;
-      top: -15px; }
-    .service-item .service-link:hover {
-      color: #fff !important; }
-  .service-item:hover {
-    background: #4C9A2A; }
+  border-radius: 10px;
+}
+.service-item .service-content .service-text {
+  color: #000000;
+}
+.service-item .service-thumb {
+  margin-bottom: 20px;
+}
+.service-item .service-thumb img {
+  border-radius: 10px;
+}
+.service-item .service-link {
+  margin-top: 55px;
+  display: inline-block;
+  position: relative;
+}
+.service-item .service-link:after {
+  content: "";
+  height: 2px;
+  width: 75px;
+  position: absolute;
+  left: 0;
+  top: -15px;
+}
+.service-item .service-link:hover {
+  color: #fff !important;
+}
+.service-item:hover {
+  background: #4C9A2A;
+}
+
+/* Make all service cards the same height */
+.service-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.service-content {
+  flex-grow: 1;
+}
 
 /*
  * Shortcode: staff.scss
