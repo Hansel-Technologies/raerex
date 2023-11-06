@@ -1078,6 +1078,13 @@ body.has-fixed-footer .top-sliders-container {
       padding-left: 0;
       padding-right: 0; } }
 
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* This ensures the image container takes up the full height of its parent */
+}
+
 section {
   position: relative; }
 
