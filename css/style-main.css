@@ -21683,4 +21683,19 @@ $grid-breakpoints: (
         padding: 10px 20px;
       }
     } 
-    
+/* Styles for the logos grid on smaller devices */
+@media (max-width: 768px) {
+  .isotope-item {
+      width: 50% !important; /* Make each logo take up 50% of the container width (2 logos per row) */
+      padding: 5px; /* Add some spacing between logos */
+  }
+
+  .isotope-item img {
+      max-width: 100%; /* Make the logos responsive within their containers */
+      height: auto;
+  }
+
+  .isotope-item-inner {
+      text-align: center; /* Center the logos within their containers */
+  }
+}
