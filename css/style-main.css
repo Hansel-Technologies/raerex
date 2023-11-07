@@ -16988,20 +16988,27 @@ footer#footer a:not(.social-link):not(.icon) {
   float: none; }
 
 .image-box {
-  position: relative; }
+    text-align: center;
+    margin-bottom: 20px;
+}
 
-.image-box .image1 {
-  border-radius: 10px; }
+.image-box img {
+    max-width: 100%; /* Make the images responsive */
+    height: auto;
+}
 
-.image-box .floating-img1 {
-  position: absolute;
-  right: 15px;
-  z-index: 1;
-  bottom: -90px;
-  border-radius: 10px; }
-  @media (max-width: 575.98px) {
-    .image-box .floating-img1 {
-      bottom: -125px; } }
+/* Media query for small screens (up to 768px) */
+@media (max-width: 768px) {
+    .image-box {
+        width: 50%; /* Make the image boxes 50% wide for a two-column grid */
+        display: inline-block;
+    }
+}
+
+
+
+
+
 
 .have-question {
   border-top: 1px solid #d8dde3;
@@ -17045,6 +17052,7 @@ footer#footer a:not(.social-link):not(.icon) {
 
 .features-block {
   background: #fff;
+  padding-bottom: 0; 
   border-radius: 10px;
   box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.07);
   padding: 60px;
@@ -21667,3 +21675,12 @@ $grid-breakpoints: (
     font-size: 2.2rem; }
   h3 {
     font-size: 2.0rem; } }
+
+    @media (max-width: 767px) {
+      /* Adjust button styles for smaller screens */
+      .btn-theme-colored1 {
+        font-size: 16px;
+        padding: 10px 20px;
+      }
+    } 
+    
