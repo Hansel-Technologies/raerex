@@ -16955,7 +16955,8 @@ footer#footer a:not(.social-link):not(.icon) {
   top: -150px; }
 
 .section-object-img2 {
-  position: relative; }
+  position: relative; 
+  height: 700px;}
 
 .section-object-img2:after {
   background-repeat: no-repeat;
@@ -16967,6 +16968,10 @@ footer#footer a:not(.social-link):not(.icon) {
   left: 156px;
   top: 43%;
   z-index: -1; }
+
+.section-object-img4{
+  position: relative; 
+  height: 450px;}
 
 .opening-hours {
   list-style: none;
@@ -21700,3 +21705,5 @@ $grid-breakpoints: (
       text-align: center; /* Center the logos within their containers */
   }
 }
+
+
