@@ -17057,7 +17057,7 @@ footer#footer a:not(.social-link):not(.icon) {
 
 .features-block {
   background: #fff;
-  height: 350px;
+  height: 380px;
   padding-bottom: 0; 
   border-radius: 10px;
   box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.07);
@@ -21705,5 +21705,6 @@ $grid-breakpoints: (
       text-align: center; /* Center the logos within their containers */
   }
 }
+
 
 
