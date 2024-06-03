@@ -17055,24 +17055,39 @@ footer#footer a:not(.social-link):not(.icon) {
   padding: 40px 52px;
   font-size: 34px; }
 
-.features-block {
-  background: #fff;
-  height: 380px;
-  padding-bottom: 0; 
-  border-radius: 10px;
-  box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.07);
-  padding: 60px;
-  position: relative; }
+  .features-block {
+    background: #fff;
+    height: auto; /* Change height to auto for better responsiveness */
+    padding-bottom: 0;
+    border-radius: 10px;
+    box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.07);
+    padding: 60px;
+    position: relative;
+  }
+  
   .features-block .floating-icon {
     position: absolute;
     height: 103px;
     width: 103px;
     top: -45px;
-    right: -45px; }
-    @media (max-width: 575.98px) {
-      .features-block .floating-icon {
-        right: -10px; } }
-
+    right: -45px;
+  }
+  
+  @media (max-width: 767px) {
+    .features-block {
+      padding: 30px; /* Reduce padding on small screens */
+    }
+  
+    .features-block .floating-icon {
+      display: none; /* Hide the floating icon on small screens */
+    }
+  }
+  
+  @media (max-width: 575.98px) {
+    .features-block .floating-icon {
+      right: -10px; /* Keep this rule for very small screens */
+    }
+  }
 .feature .feature-title {
   display: inline-block;
   transition: all 0.3s ease-in-out; }
